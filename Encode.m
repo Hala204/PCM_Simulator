@@ -1,4 +1,4 @@
-function encodedSignal = Encoder(levels, encodingType)
+function encodedSignal = Encode(levels, encodingType)
     % Convert levels to binary code stream
     binaryStream = reshape(levels', 1, []);
 
