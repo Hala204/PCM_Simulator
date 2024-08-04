@@ -26,7 +26,7 @@ Fs = str2double(cell2mat(inputdlg('Enter Sampling Frequency:','User input',[1 40
 level=str2double(cell2mat(inputdlg('Enter Number of Levels:','User input',[1 40])));
 mp=str2double(cell2mat(inputdlg('Enter Peak Quantization Level:','User input',[1 40])));
 mue=str2double(cell2mat(inputdlg('Enter μ Value:','User input',[1 40])));
-[qunatized,levels]=quantizer(sampled,level,mp);
+[qunatized,levels]=Quantizer(sampled,level,mp);
 %%
 %Encoding 
 type=str2double(cell2mat(inputdlg(sprintf('Enter Type of Encoding:\n 1-UniPlar NRZ\n 2-Polar NRZ\n 3-Manchester'),'User input',[1 40])));
